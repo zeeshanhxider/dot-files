@@ -1,0 +1,8 @@
+* {
+  green: #a3c687;
+  bg-d-blue: #1e2326;
+  bg-l-blue: #272d32;
+  bg-selected-blue: #323940;
+  orange: #dbbc7f;
+  critical-red: #e67e80;
+}

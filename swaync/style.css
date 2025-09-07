@@ -1,0 +1,209 @@
+/* ========================================================================
+   SwayNC CSS Configuration - Catppuccin Theme
+   Reformatted for better readability and maintainability
+======================================================================== */
+
+/* ========================================================================
+   COLOR PALETTE - Gruvbox Inspired
+======================================================================== */
+@define-color background-d-blue #1E2326;        /* Dark background - main canvas */
+@define-color background-l-blue #272d32;      /* Secondary background - panels */
+@define-color bg-tertiary #3c3836;       /* Tertiary background - hover states */
+@define-color bg-selected #504945;       /* Selection background */
+
+@define-color fg-primary #ebdbb2;         /* Primary text - cream/off-white */
+@define-color fg-secondary #d5c4a1;      /* Secondary text - muted cream */
+@define-color fg-tertiary #bdae93;       /* Tertiary text - greyish cream */
+@define-color fg-disabled #665c54;       /* Disabled text - dark grey */
+
+@define-color green #A3C687;       /* Spotify green accent */
+@define-color orange #dbbc7f;      /* Warm orange accent */
+@define-color red #e67e80;         /* Error/critical red */
+
+@define-color border-primary #504945;     /* Primary border color */
+@define-color border-focus #b8bb26;       /* Focus border - green accent */
+
+
+/* ========================================================================
+   GLOBAL STYLES
+======================================================================== */
+* {
+    outline: none;
+    font-family: "FiraCode Nerd Font";
+    font-size: 16px;
+    text-shadow: none;
+    color: @green;
+}
+
+/* ========================================================================
+   CONTROL CENTER - Main notification panel
+======================================================================== */
+.control-center {
+    background-color: @background-d-blue;
+    border: 2px solid @green;
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.control-center .notification-row .notification-background {
+    border-radius: 0px;
+    margin-top: 5px;
+}
+
+.control-center .notification-row .notification-background .notification {
+    border-radius: 0px;
+}
+
+.control-center .notification-row .notification-background .close-button {
+    border-radius: 0px;
+}
+
+/* ========================================================================
+   NOTIFICATION STYLES
+======================================================================== */
+.notification {
+    background-color: @background-d-blue;
+    border-radius: 0px;
+    border: 2px solid @green;
+    margin: 8px 2px;
+}
+
+.notification > *:last-child > * {
+    margin: 5px;
+}
+
+/* Notification Content */
+.notification-content {
+    padding: 15px 10px 10px 20px;
+    border-radius: 0px;
+}
+
+
+/* Text Elements */
+.summary {
+    font-size: 1.1rem;
+}
+
+.time {
+    font-size: 0.8rem;
+}
+
+.body {
+    font-size: 1rem;
+}
+
+/* Notification Actions */
+.notification-action > button {
+    padding: unset;
+    margin: unset;
+    border-radius: 0px;
+}
+
+.notification-action > label {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Notification Priority Styles */
+.notification.critical {
+    background-color: @critical-red;
+    border-radius: 0px;
+}
+
+.notification.low,
+.notification.normal {
+    background-color: @background-d-blue;
+    border-radius: 0px;
+}
+
+/* Close Button */
+.close-button {
+    background-color: transparent;
+}
+
+.close-button:hover {
+    color: @critical-red;
+}
+
+/* ========================================================================
+   NOTIFICATION GROUPS
+======================================================================== */
+.notification-group-header,
+.notification-group-icon {
+    font-size: 0.9rem;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+    background-color: @bg-tertiary;
+    border-radius: 0px;
+}
+
+.notification-group-collapse-button:hover {
+    background-color: @accent-blue;
+}
+
+.notification-group-close-all-button:hover {
+    background-color: @accent-red;
+}
+
+/* ========================================================================
+   SCROLLBARS & SLIDERS
+======================================================================== */
+trough highlight {
+    background: @accent-blue;
+    border-radius: 0px;
+}
+
+scale trough {
+    margin: 0rem 1rem;
+    background-color: @bg-tertiary;
+    min-height: 8px;
+    min-width: 70px;
+    border-radius: 0px;
+}
+
+slider {
+    background-color: @fg-primary;
+    border-radius: 0px;
+}
+
+tooltip {
+    background-color: @bg-tertiary;
+    border-radius: 0px;
+}
+
+/* ========================================================================
+   WIDGET STYLES
+======================================================================== */
+
+/* ========================================================================
+   TITLE WIDGET - Header with clear all button
+======================================================================== */
+.widget-title {
+    padding: unset;
+    margin: unset;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.widget-title > label {
+    font-size: 1.5rem;
+}
+
+.widget-title > button {
+    padding: unset;
+    margin: unset;
+    text-shadow: none;
+    background: @accent-red;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 0px 6px;
+    transition: all .7s ease;
+}
+
+.widget-title > button:hover {
+    background: @accent-red;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.65);
+}

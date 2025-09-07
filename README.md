@@ -1,0 +1,1 @@
+dot files for my hyprland arch configuration
