@@ -7,7 +7,7 @@ configuration {
 	display-window: "[windows]";
 	display-run: "[run]";
 	drun-display-format: "{icon} {name}";
-	font: "FiraCode Nerd Font Bold 12";
+	font: "FiraCode Nerd Font Bold 10";
 	show-icons: true;
 	icon-theme: "Colloid";
 }
@@ -18,7 +18,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1000px;
+    width:                       700px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -40,7 +40,7 @@ mainbox {
 }
 
 imagebox {
-    padding:                     20px;
+    padding:                     10px;
     background-color:            transparent;
     background-image:            url("~/Pictures/wallpapers/cyy.png", height);
     orientation:                 vertical;
@@ -48,8 +48,8 @@ imagebox {
 }
 
 listbox {
-    spacing:                     20px;
-    padding:                     20px;
+    spacing:                     10px;
+    padding:                     10px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -61,8 +61,8 @@ dummy {
 
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
-    padding:                     15px;
+    spacing:                     5px;
+    padding:                     10px;
     border-radius:               0px;
     background-color:		     @bg-l-blue;
     text-color:			         @green;
@@ -88,12 +88,12 @@ entry {
 
 mode-switcher{
     enabled:                     true;
-    spacing:                     20px;
+    spacing:                     10px;
     background-color:            transparent;
     text-color:                  @green;
 }
 button {
-    padding:                     15px;
+    padding:                     7px;
     border:			 3px solid;
     border-color:		 @green;
     border-radius:               0px;
@@ -119,7 +119,7 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     10px;
+    spacing:                     12px;
     background-color:            transparent;
     text-color:                  @green;
     cursor:                      "default";
@@ -128,7 +128,7 @@ listview {
 element {
     enabled:                     true;
     spacing:                     15px;
-    padding:                     8px;
+    padding:                     4px;
     border-radius:               0px;
     background-color:            transparent;
     text-color:                  @green;
@@ -160,7 +160,7 @@ element selected.active {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        26px;
     cursor:                      inherit;
 }
 element-text {
