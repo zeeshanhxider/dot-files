@@ -14,7 +14,8 @@ require("lazy").setup({
     require("plugins.everforest"),
     require("plugins.telescope"),
     require("plugins.treesitter"),
-    require("plugins.neotree"),	
+    require("plugins.neotree"),
+    require("plugins.dashboard"),
 })
 
 -- Clipboard
